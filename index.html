@@ -4,15 +4,42 @@
     <meta charset="utf-8">
     <title>Moon Phases</title>
       
-      <!-link href="styles/style.css" rel="stylesheet" type="text/css"->
+      <link href="styles/style.css" rel="stylesheet" type="text/css">
       
       
   </head>
   <body>
+
+        <div id="glcanvas"><p>This image depicts the view you would see of the moon and sun if you were standing at the red reference point <img src="images/refpointicon.svg" width="10" height="10"> on the Earth.</p></div>
       
       <canvas id="2dcanvas" width="1000px" height="1000px">Looks like the canvas element isn't supported in your browser.</canvas>
       
-      <div id="glcanvas"></div>
+
+      
+      <section id="controls">
+        <p>Speed controls:</p>
+          
+          <label for="earthorbit">Earth orbit:</label>
+          <input type="number" id="earthorbit" min="1" step="1" value="200">
+          
+          <label for="moonorbit">Moon orbit:</label>
+          <input type="number" id="moonorbit" min="1" step="1" value="50">
+          
+          <label for="earthrotate">Earth rotation:</label>
+          <input type="number" id="earthrotate" min="1" step="1" value="10">
+      </section>
+      
+      <section id="instructions">
+        <ul>
+            <li><img src="images/sunicon.svg"> Tap the sun to make the earth orbit.</li>
+            <li><img src="images/moonicon.svg"> Tap the moon to make the moon orbit.</li>
+            <li><img src="images/earthicon.svg"> Tap the Earth to make it rotate.</li>
+            <li><img src="images/shadowicon.svg"> Tap anywhere else to toggle shadows from the Earth and moon.</li>
+        </ul>
+          <p>The speed controls are relative numbers representing the amount of time it takes for the object to complete its rotation--so a <em>larger</em> number results in a <em>slower</em> rotation.</p>
+      </section>
+      
+      
       
       <script src="three.min.js"></script>
       <script src="script.js"></script>
