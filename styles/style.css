@@ -1,0 +1,58 @@
+* {
+    font-family: arial, sans-serif;
+}
+
+body {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+canvas {
+    border: solid 1px gray;
+}
+
+#glcanvas {
+    width: 500px;
+    padding: 20px;
+    float: right;
+}
+
+#glcanvas p {
+    padding: 10px 20px;
+    border: solid 2px gray;
+    background-color: rgb(240, 240, 240);
+}
+
+#controls * {
+    display: inline-block;
+    margin: 0;
+}
+
+#controls p {
+    font-weight: bold;
+    width: 125px;
+}
+
+#controls label {
+    width: 100px;
+    text-align: right;
+    margin-left: 50px;
+}
+
+#controls input {
+    width: 75px;
+    margin-right: 50px;
+}
+
+#instructions {
+    border: solid 2px gray;
+    background-color: rgb(240, 240, 240);
+    margin: 20px;
+    padding: 10px 20px;
+    width: 920px;
+}
+
+#instructions ul {
+    list-style: none;
+    padding: 0;
+}
