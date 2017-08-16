@@ -147,7 +147,7 @@ function drawSunRays () {
         ctx.quadraticCurveTo(sun.radius * Math.cos(a - (Math.PI / 16)),     //x control point midway between tips
                              sun.radius * Math.sin(a - (Math.PI / 16)),    //y control point midway between tips
                              1.2 * sun.radius * Math.cos(a),    //x coordinate of next ray tip
-                             1.2 * sun.radius * Math.sin(a),);    //y coordinate of next ray tip
+                             1.2 * sun.radius * Math.sin(a));    //y coordinate of next ray tip
         }
     ctx.fillStyle = 'orange';
     ctx.fill();
