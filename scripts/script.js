@@ -156,8 +156,8 @@ function drawSunRays () {
 
 //When the canvas is clicked, check what was hit an update the properties on the appropriate objects
 function checkClick(event) {
-    var x = event.layerX - 500;
-    var y = event.layerY - 500;
+    var x = event.offsetX - 500;
+    var y = event.offsetY - 500;
     
     if (x>(sun.x-sun.radius) && x<(sun.x+sun.radius) && y>(sun.y-sun.radius) && y<(sun.y+sun.radius)) {
         earth.orbiting = !earth.orbiting; //If the sun is clicked, toggle the earth orbit
